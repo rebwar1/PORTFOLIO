@@ -498,3 +498,44 @@ h1 {
     color: #754575;
   }
 }
+/* 🍉 */
+/* .portfolio {
+  padding: 5rem 0;
+  background: url(./img/stars-bg.png);
+  color: rgb(184, 182, 182);
+  font-family: "Poppins", sans-serif;
+  height: auto;
+} */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 10rem;
+  padding-top: 5rem;
+}
+
+.card {
+  width: 80%;
+  height: 100%;
+}
+
+.img-card {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
